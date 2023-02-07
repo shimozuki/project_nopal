@@ -50,7 +50,7 @@ dependencies:
   material: ^1.0.0+2
   just_audio: ^0.9.31
   flutter_neumorphic: ^3.2.0
-
+  permission_handler: ^10.2.0
   # path_provider: ^2.0.7
 
 dev_dependencies:

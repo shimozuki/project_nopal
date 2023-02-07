@@ -147,7 +147,6 @@ class _P582State extends State<P582> {
         ),
       ),
       bottomNavigationBar: Visibility(
-        visible: isVisible,
         child: Container(
           height: 40,
           color: audiobar,
@@ -313,7 +312,6 @@ class _P583State extends State<P583> {
         ),
       ),
       bottomNavigationBar: Visibility(
-        visible: isVisible,
         child: Container(
           height: 40,
           color: audiobar,
@@ -479,7 +477,6 @@ class _P584State extends State<P584> {
         ),
       ),
       bottomNavigationBar: Visibility(
-        visible: isVisible,
         child: Container(
           height: 40,
           color: audiobar,
@@ -645,7 +642,6 @@ class _P585State extends State<P585> {
         ),
       ),
       bottomNavigationBar: Visibility(
-        visible: isVisible,
         child: Container(
           height: 40,
           color: audiobar,
@@ -811,7 +807,6 @@ class _P586State extends State<P586> {
         ),
       ),
       bottomNavigationBar: Visibility(
-        visible: isVisible,
         child: Container(
           height: 40,
           color: audiobar,
@@ -977,7 +972,6 @@ class _P587State extends State<P587> {
         ),
       ),
       bottomNavigationBar: Visibility(
-        visible: isVisible,
         child: Container(
           height: 40,
           color: audiobar,
@@ -1157,7 +1151,6 @@ class _P588State extends State<P588> {
         ),
       ),
       bottomNavigationBar: Visibility(
-        visible: isVisible,
         child: Container(
           height: 40,
           color: audiobar,
@@ -1337,7 +1330,6 @@ class _P589State extends State<P589> {
         ),
       ),
       bottomNavigationBar: Visibility(
-        visible: isVisible,
         child: Container(
           height: 40,
           color: audiobar,
@@ -1517,7 +1509,6 @@ class _P590State extends State<P590> {
         ),
       ),
       bottomNavigationBar: Visibility(
-        visible: isVisible,
         child: Container(
           height: 40,
           color: audiobar,
@@ -1697,7 +1688,6 @@ class _P591State extends State<P591> {
         ),
       ),
       bottomNavigationBar: Visibility(
-        visible: isVisible,
         child: Container(
           height: 40,
           color: audiobar,
@@ -1877,7 +1867,6 @@ class _P592State extends State<P592> {
         ),
       ),
       bottomNavigationBar: Visibility(
-        visible: isVisible,
         child: Container(
           height: 40,
           color: audiobar,
@@ -2057,7 +2046,6 @@ class _P593State extends State<P593> {
         ),
       ),
       bottomNavigationBar: Visibility(
-        visible: isVisible,
         child: Container(
           height: 40,
           color: audiobar,
@@ -2237,7 +2225,6 @@ class _P594State extends State<P594> {
         ),
       ),
       bottomNavigationBar: Visibility(
-        visible: isVisible,
         child: Container(
           height: 40,
           color: audiobar,
@@ -2417,7 +2404,6 @@ class _P595State extends State<P595> {
         ),
       ),
       bottomNavigationBar: Visibility(
-        visible: isVisible,
         child: Container(
           height: 40,
           color: audiobar,
@@ -2597,7 +2583,6 @@ class _P596State extends State<P596> {
         ),
       ),
       bottomNavigationBar: Visibility(
-        visible: isVisible,
         child: Container(
           height: 40,
           color: audiobar,
@@ -2777,7 +2762,6 @@ class _P597State extends State<P597> {
         ),
       ),
       bottomNavigationBar: Visibility(
-        visible: isVisible,
         child: Container(
           height: 40,
           color: audiobar,
@@ -2957,7 +2941,6 @@ class _P598State extends State<P598> {
         ),
       ),
       bottomNavigationBar: Visibility(
-        visible: isVisible,
         child: Container(
           height: 40,
           color: audiobar,
@@ -3137,7 +3120,6 @@ class _P599State extends State<P599> {
         ),
       ),
       bottomNavigationBar: Visibility(
-        visible: isVisible,
         child: Container(
           height: 40,
           color: audiobar,
@@ -3317,7 +3299,6 @@ class _P600State extends State<P600> {
         ),
       ),
       bottomNavigationBar: Visibility(
-        visible: isVisible,
         child: Container(
           height: 40,
           color: audiobar,
@@ -3497,7 +3478,6 @@ class _P601State extends State<P601> {
         ),
       ),
       bottomNavigationBar: Visibility(
-        visible: isVisible,
         child: Container(
           height: 40,
           color: audiobar,
@@ -3677,7 +3657,6 @@ class _P602State extends State<P602> {
         ),
       ),
       bottomNavigationBar: Visibility(
-        visible: isVisible,
         child: Container(
           height: 40,
           color: audiobar,
@@ -3857,7 +3836,6 @@ class _P603State extends State<P603> {
         ),
       ),
       bottomNavigationBar: Visibility(
-        visible: isVisible,
         child: Container(
           height: 40,
           color: audiobar,
@@ -4037,7 +4015,6 @@ class _P604State extends State<P604> {
         ),
       ),
       bottomNavigationBar: Visibility(
-        visible: isVisible,
         child: Container(
           height: 40,
           color: audiobar,

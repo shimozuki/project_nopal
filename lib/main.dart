@@ -6,6 +6,12 @@ import 'setting.dart';
 import 'var.dart';
 import 'page.dart';
 import 'splash.dart';
+import 'package:flutter_quran/sholawat/allhulkahfi.dart';
+import 'package:flutter_quran/sholawat/hayyulhadi.dart';
+import 'package:flutter_quran/sholawat/Tabbasam.dart';
+import 'package:flutter_quran/sholawat/Manana.dart';
+import 'package:flutter_quran/sholawat/Yarabb.dart';
+import 'package:flutter_quran/dashboard/dasboard.dart';
 // import 'package:firebase_core/firebase_core.dart';
 
 //run App
@@ -35,25 +41,22 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
-      onWillPop: () async {
-        final difference = DateTime.now().difference(timeBackPressed);
-        final isExitWarning = difference >= Duration(seconds: 2);
-        timeBackPressed = DateTime.now();
-
-        if (isExitWarning) {
-          Navigator.of(context).pop();
-          return false;
-        } else {
-          SystemNavigator.pop();
-          return true;
-        }
-      },
+      onWillPop: () async => false,
       child: DefaultTabController(
         length: 2,
         child: Scaffold(
           backgroundColor: bgcolor,
           //top bar
           appBar: AppBar(
+            leading: IconButton(
+              icon: Icon(Icons.arrow_back, color: Colors.amber),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HomeScreen()),
+                );
+              },
+            ),
             iconTheme: IconThemeData(color: Colors.amber),
             toolbarHeight: 60.0,
             title: Text(
@@ -241,10 +244,10 @@ class _HomeState extends State<Home> {
                       num: '1',
                       number: '١',
                       onPressed: () {
-                        Navigator.pushNamed(
+                        Navigator.push(
                           context,
-                          Pages.routeName,
-                          arguments: ScreenArguments(0),
+                          MaterialPageRoute(
+                              builder: (context) => Allahulkahfi()),
                         );
                       },
                     ),
@@ -254,10 +257,9 @@ class _HomeState extends State<Home> {
                       num: '2',
                       number: '٢',
                       onPressed: () {
-                        Navigator.pushNamed(
+                        Navigator.push(
                           context,
-                          Pages.routeName,
-                          arguments: ScreenArguments(1),
+                          MaterialPageRoute(builder: (context) => Hayyulhadi()),
                         );
                       },
                     ),
@@ -267,10 +269,9 @@ class _HomeState extends State<Home> {
                       num: '3',
                       number: '٣',
                       onPressed: () {
-                        Navigator.pushNamed(
+                        Navigator.push(
                           context,
-                          Pages.routeName,
-                          arguments: ScreenArguments(3),
+                          MaterialPageRoute(builder: (context) => Tabbasam()),
                         );
                       },
                     ),
@@ -280,10 +281,9 @@ class _HomeState extends State<Home> {
                       num: '4',
                       number: '٤',
                       onPressed: () {
-                        Navigator.pushNamed(
+                        Navigator.push(
                           context,
-                          Pages.routeName,
-                          arguments: ScreenArguments(4),
+                          MaterialPageRoute(builder: (context) => Manana()),
                         );
                       },
                     ),
@@ -293,10 +293,9 @@ class _HomeState extends State<Home> {
                       num: '5',
                       number: '٥',
                       onPressed: () {
-                        Navigator.pushNamed(
+                        Navigator.push(
                           context,
-                          Pages.routeName,
-                          arguments: ScreenArguments(5),
+                          MaterialPageRoute(builder: (context) => Yarabb()),
                         );
                       },
                     ),
