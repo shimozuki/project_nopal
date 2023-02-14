@@ -54,19 +54,23 @@ class _YarabbState extends State<Yarabb> {
 
     //now let's handle the audioplayer time
 
-    //this function will allow you to get the music duration
+    _player.onDurationChanged.listen((d) {
+      setState(() {
+        musicLength = d;
+      });
+    });
     // _player.durationHandler = (d) {
     //   setState(() {
     //     musicLength = d;
     //   });
     // };
 
-    // //this function will allow us to move the cursor of the slider while we are playing the song
-    // _player.positionHandler = (p) {
-    //   setState(() {
-    //     position = p;
-    //   });
-    // };
+    //this function will allow us to move the cursor of the slider while we are playing the song
+    _player.onAudioPositionChanged.listen((Duration p) {
+      setState(() {
+        position = p;
+      });
+    });
   }
 
   @override
@@ -104,7 +108,7 @@ class _YarabbState extends State<Yarabb> {
         backgroundColor: Colors.grey[850],
         actions: [
           IconButton(
-            icon: Icon(Icons.arrow_forward),
+            icon: Icon(Icons.close),
             onPressed: () {
               Navigator.push(
                 context,

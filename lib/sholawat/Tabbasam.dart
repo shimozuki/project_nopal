@@ -55,19 +55,23 @@ class _TabbasamState extends State<Tabbasam> {
 
     //now let's handle the audioplayer time
 
-    //this function will allow you to get the music duration
+    _player.onDurationChanged.listen((d) {
+      setState(() {
+        musicLength = d;
+      });
+    });
     // _player.durationHandler = (d) {
     //   setState(() {
     //     musicLength = d;
     //   });
     // };
 
-    // //this function will allow us to move the cursor of the slider while we are playing the song
-    // _player.positionHandler = (p) {
-    //   setState(() {
-    //     position = p;
-    //   });
-    // };
+    //this function will allow us to move the cursor of the slider while we are playing the song
+    _player.onAudioPositionChanged.listen((Duration p) {
+      setState(() {
+        position = p;
+      });
+    });
   }
 
   @override
@@ -88,7 +92,7 @@ class _TabbasamState extends State<Tabbasam> {
         title: Column(
           children: const [
             Text(
-              "Sholawat Tabassam",
+              "تبسم",
               style: TextStyle(fontFamily: 'Anton', letterSpacing: 4.0),
             ),
             Text(

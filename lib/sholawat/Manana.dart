@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_quran/main.dart';
+
 import '../var.dart';
 import 'Yarabb.dart';
 import 'Tabbasam.dart';
@@ -56,18 +57,23 @@ class _MananaState extends State<Manana> {
     //now let's handle the audioplayer time
 
     //this function will allow you to get the music duration
+    _player.onDurationChanged.listen((d) {
+      setState(() {
+        musicLength = d;
+      });
+    });
     // _player.durationHandler = (d) {
     //   setState(() {
     //     musicLength = d;
     //   });
     // };
 
-    // //this function will allow us to move the cursor of the slider while we are playing the song
-    // _player.positionHandler = (p) {
-    //   setState(() {
-    //     position = p;
-    //   });
-    // };
+    //this function will allow us to move the cursor of the slider while we are playing the song
+    _player.onAudioPositionChanged.listen((Duration p) {
+      setState(() {
+        position = p;
+      });
+    });
   }
 
   @override
